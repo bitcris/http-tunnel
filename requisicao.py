@@ -26,7 +26,7 @@ headers = {
     'Accept-Language': 'pt-BR'
 }
 
-
+print('CONECTANDO...')
 response = requests.get(url, headers=headers)
 
 
