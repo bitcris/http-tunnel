@@ -26,9 +26,9 @@ headers = {
     'Accept-Language': 'pt-BR'
 }
 
-print('CONECTANDO...')
-response = requests.get(url, headers=headers)
 
+response = requests.get(url, headers=headers)
+print('CONECTANDO...')
 
 # Verifique o status da resposta
 if response.status_code == 200:
