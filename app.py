@@ -1,30 +1,16 @@
-import socket
+def connect():
+    import  conexao
 
-print('PYTHON CONNECT V1.0\n')
-defaultUrl = 'api.apifree.top'
-
-url = input('URL/IP: ')
-
-if url == "":
-  url = defaultUrl
-
-  
+def get():
+    import requisicao
 
 
-def tunnel():
-  print(f'CONECTANDO A [ {url} ]...\n')
+print('ESCOLHA O NÚMERO DA OPÇÃO:\n1 - CONNECT\n2 - GET')   
 
-# Crie um soquete INET, com fluxo de dados (TCP)
-  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  s.connect((url, 80))
+esc = int(input(''))
 
-  print('ORIGEM:',s.getsockname())
-  print('DESTINO:',s.getpeername())
+if esc == 1:
+    connect()
 
-
-
-
-
-
-
-tunnel()
+elif esc == 2:
+    get()    
